@@ -176,7 +176,7 @@ int main(int argc, char *argv[])
 #define VFS_IMPL "win32"
 	const string sqlDbPath("./app.sqlite.db");
 #else
-#define VFS_IMPL "unix-excl"	// unix[-]{dotfile,excl,none,namedsem}  -- Programmers are encouraged to use only "unix" or "unix-excl" unless there is a compelling reason to do otherwise.
+#define VFS_IMPL "unix-dotfile"	// unix[-]{dotfile,excl,none,namedsem}  -- Programmers are encouraged to use only "unix" or "unix-excl" unless there is a compelling reason to do otherwise.
 	const string sqlDbPath("/system_data/priv/mms/app.db");
 #endif
 
